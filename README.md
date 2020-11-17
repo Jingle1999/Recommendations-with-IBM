@@ -50,38 +50,3 @@ The process for solving this recommendation task involves the following steps:
 Basically two datasets are provided from the IBM Watson Studio platform – the first one describes the user-item-interactions as csv-file, the second one describes the articles in the community in articles_community.csv
 In order to get a first overview over the data, please see the following two tables. The first one is a data overview describing the summary statistics of the dataframe. The second one is a histogram showing the data distribution of  the user-item-interaction.
 
- 
-Data overview user-item-interaction
-
- 
-Histogram user-item interaction
-
-There are 714 unique articles out of 1051 articles on the IBM platform. 5148 unique users are creating 45993 user-item-interactions (x̄ ≅ 8.9). E.g. the most-viewed-article-id is 1429 with 937 views.
-
-
-3.	Data Preperation
-After the analysis of the data some grouping of data was done to get a better understanding of the data as well as some data cleaning, e.g. removing duplicate values.
-
- 
-user-item-interactions
-
- 
-articles_community
-
-4.	Modelling
-For the Rank-Based-Recommendations we need to sort the data to get the top articles. Later as preparation for the User-Based Collaborative filtering we also need to prepare a user-item-matrix (rows=user_id, columns=article_ids), that has only 1 and 0 as values, in order for us to check for similarity as dot product of two users and finalise our recommendation. Finally for the content based recommendation we use Natural-Language-processing-techniques (NLP) in order to get some content information, especially when facing recommendations for new users, that didn’t interact on our site so far.
- 
-User-item-matrix
-5.	Evaluation
-We the use the matrix factorisation as preparation for the SVD. This last part is used for the prediction of the latent features as well as check regarding how good our recommendation was.
- 
-Similarity
- 
-SVD
- 
-Accuracy improves with increasing number of latent features
-As we don’t have ratings or another measure regarding the quality of the user-item-interaction, we only use the quantity of user-item-interaction as basis for our recommendations. However, as seen in the above pictures, there are some ways to figure out latent features in the datasets. It’s a first stepe towards Machine Learning (ML) and it seems as magically as ML itself, as we are here not just stating the obvious.
- 
-Recommendations for new users
-6.	Deployment
-The code of the recommendation engine can be downloaded on GitHub, if you would like to do some further digging.
