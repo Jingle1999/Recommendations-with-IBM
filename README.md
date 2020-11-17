@@ -56,7 +56,5 @@ The process for solving this recommendation task involves the following steps:
 -	Content Based Recommendations (according to Natural Language Processing, NLP)
 -	Matrix Factorization (setting-up a Machine Learning-environment for prediction-purposes)
 
-2.	Data Understanding
-Basically two datasets are provided from the IBM Watson Studio platform – the first one describes the user-item-interactions as csv-file, the second one describes the articles in the community in articles_community.csv
-In order to get a first overview over the data, please see the following two tables. The first one is a data overview describing the summary statistics of the dataframe. The second one is a histogram showing the data distribution of  the user-item-interaction.
+
 
