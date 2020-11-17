@@ -56,5 +56,7 @@ The process for solving this recommendation task involves the following steps:
 -	Content Based Recommendations (according to Natural Language Processing, NLP)
 -	Matrix Factorization (setting-up a Machine Learning-environment for prediction-purposes)
 
+For further details, please also check the article on medium: https://medium.com/@andreas.braun.2011/recommendations-with-ibm-202aaf18d6b0
+
 
 
